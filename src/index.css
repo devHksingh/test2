@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  background: rgba(var(--clr-dark-a0));
+  color: rgba(var(--clr-light-a0));
+  --clr-dark-a0: 0 0 0;
+  --clr-light-a0: 255 255 255;
+  /** Dark theme primary colors **/
+  --clr-primary-a0: 40 140 210;
+  --clr-primary-a10: 78 152 215;
+  --clr-primary-a20: 106 164 220;
+  --clr-primary-a30: 130 177 225;
+  --clr-primary-a40: 152 189 231;
+  --clr-primary-a50: 174 202 236;
+  /** Dark theme surface colors **/
+  --clr-surface-a0: 18 18 18;
+  --clr-surface-a10: 40 40 40;
+  --clr-surface-a20: 63 63 63;
+  --clr-surface-a30: 87 87 87;
+  --clr-surface-a40: 113 113 113;
+  --clr-surface-a50: 174 202 236;
+  /** Dark theme tonal surface colors */
+  --clr-surface-tonal-a0: 24 29 34;
+  --clr-surface-tonal-a10: 45 50 55;
+  --clr-surface-tonal-a20: 68 72 76;
+  --clr-surface-tonal-a30: 92 95 99;
+  --clr-surface-tonal-a40: 117 120 123;
+  --clr-surface-tonal-a50: 143 145 148;
+  /* card with bg */
+  --card-with-bg-bg: 40 40 40;
+  --card-with-bg-text: 255 255 255;
+  --card-with-bg-icon: 130 177 225;
+  --card-with-bg-btn-border: 87 87 87;
+  --card-with-bg-btn-hover: 113 113 113;
+  /* card without bg  */
+  --card-without-bg-bg: 63 63 63;
+  --card-without-bg-icon: 152 189 231;
+  --card-without-bg-text: 255 255 255;
+  --card-without-bg-border: 87 87 87;
+  /* btn */
+  --btn-bg: 63 63 63;
+  --btn-text: 255 255 255;
+  --btn-icon: 152 189 231;
+}
+
+.light {
+  /** LIGHT Base colors */
+  --clr-dark-a0: 0 0 0;
+  --clr-light-a0: 255, 255, 255;
+
+  /** Light theme primary colors */
+  --clr-primary-a0: 13, 104, 15;
+  --clr-primary-a10: 37, 107, 31;
+  --clr-primary-a20: 52, 110, 45;
+  --clr-primary-a30: 65, 113, 57;
+  --clr-primary-a40: 77, 116, 69;
+  --clr-primary-a50: 88, 118, 81;
+
+  /** Light theme surface colors */
+  --clr-surface-a0: 255, 255, 255;
+  --clr-surface-a10: 240, 240, 240;
+  --clr-surface-a20: 225, 225, 225;
+  --clr-surface-a30: 211, 211, 211;
+  --clr-surface-a40: 197, 197, 197;
+  --clr-surface-a50: 182, 182, 182;
+
+  /** Light theme tonal surface colors */
+  --clr-surface-tonal-a0: 232, 239, 230;
+  --clr-surface-tonal-a10: 220, 226, 218;
+  --clr-surface-tonal-a20: 208, 213, 206;
+  --clr-surface-tonal-a30: 196, 201, 195;
+  --clr-surface-tonal-a40: 184, 188, 183;
+  --clr-surface-tonal-a50: 173, 176, 172;
+  /** card with bg */
+  --card-with-bg-bg: 240, 240, 240;
+  --card-with-bg-text: 0 0 0;
+  --card-with-bg-icon: 65, 113, 57;
+  --card-with-bg-btn-border: 211, 211, 211;
+  --card-with-bg-btn-hover: 197, 197, 197; /** clr-surface-a40*/
+  /** card without bg  */
+  --card-without-bg-bg: 255, 255, 255;
+  --card-without-bg-icon: 65, 113, 57;
+  --card-without-bg-text: 0 0 0;
+  --card-without-bg-border: 211, 211, 211;
+  /** btn */
+  --btn-bg: 225, 225, 225;
+  --btn-text: 0 0 0;
+  --btn-icon: 77, 116, 69;
+}
+
+/** Examples */
+.bg-primary {
+  color: var(--clr-primary-a50);
+  background-color: var(--clr-surface-a0);
+}
+/* https://colorffy.com/
+https://colorffy.com/light-theme-generator?colors=0d680f-ffffff
+https://colorffy.com/dark-theme-generator?colors=288cd2-121212
+*/
